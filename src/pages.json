@@ -1,0 +1,42 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+		"path": "yourProjectName/pages/index/index",
+		"style": {
+			"navigationBarTitleText": "CY-uniapp"
+		}
+	}],
+	"subPackages": [{
+		"root": "yourProjectName/subcontract",
+		"pages": [{
+				"path": "list/list",
+				"style": {
+					"navigationBarTitleText": "CY-uniapp"
+				}
+			},
+			{
+				"path": "rate/rate",
+				"style": {
+					"navigationBarTitleText": "评分",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "poster/poster",
+				"style": {
+					"navigationBarTitleText": "海报",
+					"enablePullDownRefresh": true
+				}
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "CY-uniapp",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"enablePullDownRefresh": true //开启下拉刷新
+	}
+}
